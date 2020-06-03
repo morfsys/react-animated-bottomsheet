@@ -16,7 +16,7 @@ function ModalPortal({ children, selector }) {
     return mounted ? createPortal(children, ref.current) : null;
 }
 
-function CPBottomSheetWrapper({
+function BottomSheetWrapper({
     isBottomSheetVisible,
     closeBottomSheet,
     children,
@@ -103,7 +103,7 @@ function CPBottomSheetWrapper({
     );
 }
 
-export default class CPBottomSheet extends React.Component {
+export default class BottomSheet extends React.Component {
     componentDidUpdate() {
         if (this.props.isBottomSheetVisible) {
             document.body.style.overflow = "hidden";
@@ -118,12 +118,12 @@ export default class CPBottomSheet extends React.Component {
         const { isBottomSheetVisible, closeBottomSheet } = this.props;
         if (isBottomSheetVisible) {
             return (
-                <CPBottomSheetWrapper
+                <BottomSheetWrapper
                     isBottomSheetVisible={isBottomSheetVisible}
                     closeBottomSheet={() => closeBottomSheet()}
                 >
                     {this.props.children}
-                </CPBottomSheetWrapper>
+                </BottomSheetWrapper>
             );
         } else return null;
     }
