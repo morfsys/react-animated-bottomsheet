@@ -36,7 +36,7 @@ export default class App extends React.Component {
                 <BottomSheet
                     isBottomSheetVisible={this.state.isBottomSheetVisible}
                     closeBottomSheet={() =>
-                        this.setState({ isBottomSheetVisible: true })
+                        this.setState({ isBottomSheetVisible: false })
                     }
                 >
                     <div>
