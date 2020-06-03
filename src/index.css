@@ -1,0 +1,37 @@
+#bottomsheet {
+    z-index: 1000;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+}
+.backdrop {
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+}
+.sheet {
+    z-index: 18;
+    position: fixed;
+    height: calc(100vh + 100px);
+    width: 100%;
+    background: #fff;
+    touch-action: none;
+}
+.dragger_wrapper {
+    display: flex;
+    margin: 10px 0 30px 0;
+    justify-content: center;
+    align-items: center;
+}
+.dragger {
+    width: 76px;
+    height: 5px;
+    left: calc(50% - 76px / 2 + 0.5px);
+    background: #000000;
+    opacity: 0.2;
+    border-radius: 100px;
+}
+.sheet_wrapper {
+    display: flex;
+}

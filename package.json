@@ -1,0 +1,41 @@
+{
+    "name": "react-animated-bottomsheet",
+    "version": "0.0.1",
+    "description": "A react library for animated bottom sheet in react using user gesture.",
+    "main": "build/index",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "webpack --watch",
+        "build": "webpack"
+    },
+    "keywords": [
+        "react-animated-bottomsheet",
+        "react-bottomsheet"
+    ],
+    "author": "Aditya Singh",
+    "license": "ISC",
+    "dependencies": {
+        "react-spring": "9.0.0-rc.2",
+        "react-use-gesture": "^7.0.15"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.24.1",
+        "babel-core": "^6.24.1",
+        "babel-loader": "^7.0.0",
+        "babel-plugin-transform-object-rest-spread": "^6.23.0",
+        "babel-plugin-transform-react-jsx": "^6.24.1",
+        "babel-preset-env": "^1.5.1",
+        "css-loader": "^1.0.0",
+        "react": "^16.4.1",
+        "react-dom": "^16.4.1",
+        "style-loader": "^0.21.0",
+        "webpack": "^4.16.2",
+        "webpack-cli": "^3.1.0",
+        "webpack-dev-server": "^3.1.5"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/morfsys/react-animated-bottomsheet"
+    },
+    "homepage": "https://github.com/morfsys/react-animated-bottomsheet#readme"
+}
